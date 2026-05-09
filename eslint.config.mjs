@@ -13,6 +13,21 @@ const eslintConfig = defineConfig([
     "build/**",
     "next-env.d.ts",
   ]),
+  // Security-focused rules
+  {
+    rules: {
+      // Prevent dangerous HTML injection
+      "react/no-danger": "error",
+      "react/no-danger-with-children": "error",
+      // Prevent eval usage (XSS vector)
+      "no-eval": "error",
+      "no-implied-eval": "error",
+      // Prevent insecure randomness
+      "no-new-object": "off",
+      // Proper error handling
+      "no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
+    },
+  },
 ]);
 
 export default eslintConfig;

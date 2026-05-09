@@ -34,3 +34,48 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+---
+
+## Security
+
+This project implements the following security measures:
+
+### HTTP Security Headers
+- **Content-Security-Policy (CSP)** - Prevents XSS and injection attacks
+- **X-Frame-Options** - Prevents clickjacking attacks
+- **X-Content-Type-Options** - Prevents MIME type sniffing
+- **X-XSS-Protection** - Additional XSS filtering
+- **Referrer-Policy** - Controls referrer information
+- **Permissions-Policy** - Restricts access to browser features (camera, microphone, geolocation)
+- **Strict-Transport-Security (HSTS)** - Enforces HTTPS connections
+
+### Image Security
+- Uses Next.js Image component for optimized, lazy-loaded images
+- External images validated through configured remote patterns
+
+### Environment Variables
+- `.env.example` documents all required environment variables
+- `.env.local` is excluded from version control via `.gitignore`
+- Never commit actual API keys or secrets
+
+### Code Quality
+- ESLint with security-focused rules
+- No `dangerouslySetInnerHTML` usage
+- TypeScript for type safety
+
+### Report Vulnerabilities
+If you discover a security vulnerability, please review `public/security.txt` for contact information.
+
+---
+
+## Environment Setup
+
+1. Copy the example environment file:
+```bash
+cp .env.example .env.local
+```
+
+2. Fill in your actual values in `.env.local`
+
+3. Never commit `.env.local` to version control

@@ -4,6 +4,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Globe, Bot, Zap, ArrowUpRight } from 'lucide-react';
 import { cn } from '../lib/utils';
+import Image from 'next/image';
 
 const services = [
   {
@@ -36,7 +37,7 @@ export const Services = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="mb-16">
           <h2 className="text-3xl md:text-5xl font-bold mb-4">Core <span className="text-gradient">Capabilities</span></h2>
-          <p className="text-muted max-w-xl">We don't just build tools; we build the engine for your business growth.</p>
+          <p className="text-muted max-w-xl">We don&apos;t just build tools; we build the engine for your business growth.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -54,7 +55,13 @@ export const Services = () => {
             >
               {service.image && (
                 <div className="absolute inset-0 opacity-10 group-hover:opacity-20 transition-opacity">
-                  <img src={service.image} alt="" className="w-full h-full object-cover" />
+                  <Image
+                    src={service.image}
+                    alt=""
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
                 </div>
               )}
               

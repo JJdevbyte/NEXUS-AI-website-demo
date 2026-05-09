@@ -38,13 +38,13 @@ export const Footer = () => {
           <div>
             <h4 className="font-bold mb-6">Connect</h4>
             <div className="flex gap-4">
-              <a href="#" className="p-2 rounded-lg bg-white/5 hover:bg-primary/20 transition-colors">
+              <a href="#" target="_blank" rel="noopener noreferrer" className="p-2 rounded-lg bg-white/5 hover:bg-primary/20 transition-colors" aria-label="Website">
                 <Globe className="w-5 h-5 text-muted hover:text-primary" />
               </a>
-              <a href="#" className="p-2 rounded-lg bg-white/5 hover:bg-primary/20 transition-colors">
+              <a href="#" target="_blank" rel="noopener noreferrer" className="p-2 rounded-lg bg-white/5 hover:bg-primary/20 transition-colors" aria-label="Message">
                 <MessageSquare className="w-5 h-5 text-muted hover:text-primary" />
               </a>
-              <a href="#" className="p-2 rounded-lg bg-white/5 hover:bg-primary/20 transition-colors">
+              <a href="#" target="_blank" rel="noopener noreferrer" className="p-2 rounded-lg bg-white/5 hover:bg-primary/20 transition-colors" aria-label="Users">
                 <Users className="w-5 h-5 text-muted hover:text-primary" />
               </a>
             </div>

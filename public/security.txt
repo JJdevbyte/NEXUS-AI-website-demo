@@ -1,0 +1,21 @@
+# Security Policy for NEXUS AI Website
+
+# Contact
+If you discover a security vulnerability, please report it responsibly.
+
+# Scope
+This security policy applies to the NEXUS AI marketing website.
+
+# Disclosure Policy
+- Allow reasonable time for vulnerabilities to be addressed before public disclosure
+- Provide clear steps to reproduce the issue
+- Do not exploit vulnerabilities for any reason other than verification
+- Do not access, modify, or delete data that does not belong to you
+
+# Response Timeline
+- Acknowledgment: Within 48 hours
+- Initial Assessment: Within 7 days
+- Resolution: Best effort based on severity
+
+# Thanks
+Thank you for helping keep our website secure.
